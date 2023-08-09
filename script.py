@@ -28,8 +28,7 @@ for i in range(5):
                 filename = f"{sanitized_title}.{file_extension}"
                 filename = f"{filename.split('.com')[0]}.midi"
                 filepath = os.path.join(download_directory, filename)
-                input()
-
+                
                 with open(filepath, 'wb') as file:
                     file.write(response.content)
                 
